@@ -53,6 +53,14 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY=""
 
+      - name: Ad-hoc sign app and extension
+        run: |
+          if [ -d build/Release/CTCClick.app/Contents/PlugIns/FinderSyncExt.appex ]; then
+            codesign --force --deep --sign - build/Release/CTCClick.app/Contents/PlugIns/FinderSyncExt.appex
+          fi
+          codesign --force --deep --sign - build/Release/CTCClick.app
+          codesign --verify --deep --verbose=2 build/Release/CTCClick.app
+
       - name: Verify app exists
         run: |
           ls -lah build/Release
