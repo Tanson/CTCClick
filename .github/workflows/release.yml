@@ -1,0 +1,96 @@
+name: CTCClick Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version tag (e.g. v1.1.0)
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-package-release:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set VERSION
+        run: |
+          VREF=${{ github.ref_name }}
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            VREF=${{ github.event.inputs.version }}
+          fi
+          echo "VERSION=$VREF" >> $GITHUB_ENV
+          echo "VERSION=$VREF"
+
+      - name: Show environment versions
+        run: |
+          sw_vers
+          xcodebuild -version
+
+      - name: Resolve Swift Package dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -project CTCClick.xcodeproj
+
+      - name: Build app (Release, no code signing)
+        run: |
+          mkdir -p build/Release
+          xcodebuild build \
+            -project CTCClick.xcodeproj \
+            -scheme CTCClick \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            CONFIGURATION_BUILD_DIR=$PWD/build/Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Verify app exists
+        run: |
+          ls -lah build/Release
+          test -d build/Release/CTCClick.app
+
+      - name: Zip app
+        run: |
+          cd build/Release
+          zip -ry CTCClick-${VERSION}.zip CTCClick.app
+
+      - name: Create unsigned DMG
+        run: |
+          DMG_TEMP_DIR=$PWD/dmg_temp
+          rm -rf "$DMG_TEMP_DIR"
+          mkdir -p "$DMG_TEMP_DIR"
+          cp -R build/Release/CTCClick.app "$DMG_TEMP_DIR/"
+          ln -s /Applications "$DMG_TEMP_DIR/Applications"
+          hdiutil create -volname CTCClick \
+            -srcfolder "$DMG_TEMP_DIR" \
+            -ov -format UDZO \
+            CTCClick-${VERSION}-unsigned.dmg
+          rm -rf "$DMG_TEMP_DIR"
+
+      - name: Checksums
+        run: |
+          shasum -a 256 build/Release/CTCClick-${VERSION}.zip > build/Release/CTCClick-${VERSION}.zip.sha256
+          shasum -a 256 CTCClick-${VERSION}-unsigned.dmg > CTCClick-${VERSION}-unsigned.dmg.sha256
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.VERSION }}
+          name: CTCClick ${{ env.VERSION }}
+          body: |
+            Automated release for ${{ env.VERSION }}.
+            See README.md for install and enable steps.
+          files: |
+            build/Release/CTCClick-${{ env.VERSION }}.zip
+            build/Release/CTCClick-${{ env.VERSION }}.zip.sha256
+            CTCClick-${{ env.VERSION }}-unsigned.dmg
+            CTCClick-${{ env.VERSION }}-unsigned.dmg.sha256
