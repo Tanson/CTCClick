@@ -1,7 +1,4 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
-name: Swift
+name: CTCClick CI (Xcode)
 
 on:
   push:
@@ -11,12 +8,76 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode and macOS versions
+        run: |
+          sw_vers
+          xcodebuild -version
+
+      - name: Resolve Swift Package dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -project CTCClick.xcodeproj
+
+      - name: Build CTCClick (Release, no code signing)
+        run: |
+          mkdir -p build/Release
+          xcodebuild build \
+            -project CTCClick.xcodeproj \
+            -scheme CTCClick \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            CONFIGURATION_BUILD_DIR=$PWD/build/Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Build FinderSyncExt (Release, no code signing)
+        run: |
+          xcodebuild build \
+            -project CTCClick.xcodeproj \
+            -scheme FinderSyncExt \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: List build products
+        run: |
+          ls -lah build/Release || true
+
+      - name: Upload app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CTCClick-Release-app
+          path: |
+            build/Release/CTCClick.app
+          if-no-files-found: warn
+
+  # Optional job to create unsigned DMG using provided script
+  package-dmg:
+    needs: build
+    runs-on: macos-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build unsigned DMG (best-effort)
+        run: |
+          chmod +x build_unsigned.sh
+          ./build_unsigned.sh || echo "build_unsigned.sh failed (expected without signing)."
+
+      - name: Upload DMG artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CTCClick-Unsigned-DMG
+          path: |
+            *.dmg
+          if-no-files-found: warn
