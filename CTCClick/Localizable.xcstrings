@@ -1,0 +1,820 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "%@（%@）" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@（%2$@）"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@（%2$@）"
+          }
+        }
+      }
+    },
+    "About" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
+          }
+        }
+      }
+    },
+    "Actions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "操作"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加"
+          }
+        }
+      }
+    },
+    "Add New File Type" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加新建文件类型"
+          }
+        }
+      }
+    },
+    "App Icon Show" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App 图标展示"
+          }
+        }
+      }
+    },
+    "Apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单App"
+          }
+        }
+      }
+    },
+    "Arguments" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "参数"
+          }
+        }
+      }
+    },
+    "Authorization folder" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "授权的文件夹"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Common Dir" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常用文件夹"
+          }
+        }
+      }
+    },
+    "Common Folders" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常用文件夹"
+          }
+        }
+      }
+    },
+    "Copy Path" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy Path"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制路径"
+          }
+        }
+      }
+    },
+    "Copyright © 2025 tanson. All rights reserved" : {
+
+    },
+    "CTCClick" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CTCClick"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CTCClick"
+          }
+        }
+      }
+    },
+    "CTCClick 是一个强大的右键菜单扩展工具，让您可以轻松添加应用程序来打开文件夹，并包含许多实用的常用操作功能。通过简洁直观的界面，您可以快速配置和管理右键菜单项，提升日常工作效率。" : {
+
+    },
+    "Default Open App" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认打开 App"
+          }
+        }
+      }
+    },
+    "Delete Direct" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Direct"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直接删除"
+          }
+        }
+      }
+    },
+    "Display Name" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示名称"
+          }
+        }
+      }
+    },
+    "Dock 显示" : {
+
+    },
+    "Edit App Properties" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑App 属性"
+          }
+        }
+      }
+    },
+    "Enable extension" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用扩展"
+          }
+        }
+      }
+    },
+    "Environment Variables" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "环境变量"
+          }
+        }
+      }
+    },
+    "Favorite Folders" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常用文件夹"
+          }
+        }
+      }
+    },
+    "General" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通用"
+          }
+        }
+      }
+    },
+    "Hide" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏"
+          }
+        }
+      }
+    },
+    "Invalid Folder Selection" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无效的文件夹选择"
+          }
+        }
+      }
+    },
+    "Launch at login" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登陆时启动"
+          }
+        }
+      }
+    },
+    "New File" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新建文件"
+          }
+        }
+      }
+    },
+    "Not Authorized Folder" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无授权文件夹"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认"
+          }
+        }
+      }
+    },
+    "Open Settings" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开设置"
+          }
+        }
+      }
+    },
+    "Open With %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用 %@ 打开"
+          }
+        }
+      }
+    },
+    "Quit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止"
+          }
+        }
+      }
+    },
+    "RClick is a right-click menu extension that allows you to add applications for opening folders and includes some common actions!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CTCClick 是一个右键菜单拓展，可以添加打开文件夹的应用，可以添加一些常用的操作！"
+          }
+        }
+      }
+    },
+    "Reset" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        }
+      }
+    },
+    "Select App" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择App"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        }
+      }
+    },
+    "Show in dock" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 Dock 栏显示"
+          }
+        }
+      }
+    },
+    "Show in menu bar" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在菜单栏显示"
+          }
+        }
+      }
+    },
+    "The CTCClick extension needs to be enabled for it to work properly" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CTCClick 需要启用 扩展才能正常工作"
+          }
+        }
+      }
+    },
+    "The operation of the menu can only be executed in authorized folders" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "菜单中的操作在授权文件中才能执行"
+          }
+        }
+      }
+    },
+    "The selected folder is a subdirectory of the previously chosen folder. Please select a different folder." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择的文件夹已经包含在已授权的文件夹中"
+          }
+        }
+      }
+    },
+    "Unhide" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示"
+          }
+        }
+      }
+    },
+    "Untitled" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未命名"
+          }
+        }
+      }
+    },
+    "v%@" : {
+
+    },
+    "Want to add a feature? Give feedback here." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要添加新功能，在这里反馈"
+          }
+        }
+      }
+    },
+    "You must grant access to the folder to use this feature." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You must grant access to the folder to use this feature."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你必须首选最少一个文件夹才能使用"
+          }
+        }
+      }
+    },
+    "主要功能" : {
+
+    },
+    "了解应用程序信息和版本详情" : {
+
+    },
+    "例如：.txt" : {
+
+    },
+    "保存" : {
+
+    },
+    "保存更改" : {
+
+    },
+    "修改应用程序的显示名称和启动参数" : {
+
+    },
+    "关于 CTCClick" : {
+
+    },
+    "删除文件夹" : {
+
+    },
+    "删除目录" : {
+
+    },
+    "取消" : {
+
+    },
+    "右键菜单显示" : {
+
+    },
+    "启动参数" : {
+
+    },
+    "启用或禁用右键菜单中的操作功能" : {
+
+    },
+    "图标分类" : {
+
+    },
+    "在 Dock 中显示应用程序图标" : {
+
+    },
+    "在右键菜单中显示设置选项" : {
+
+    },
+    "在菜单栏显示 CTCClick 图标" : {
+
+    },
+    "在访达中显示" : {
+
+    },
+    "完成" : {
+
+    },
+    "常用目录管理" : {
+
+    },
+    "应用程序管理" : {
+
+    },
+    "应用简介" : {
+
+    },
+    "开机自启动" : {
+
+    },
+    "您必须授予对文件夹的访问权限才能使用此功能。" : {
+
+    },
+    "所选文件夹是之前选择文件夹的子目录。请选择不同的文件夹。" : {
+
+    },
+    "打开设置" : {
+
+    },
+    "扩展名：" : {
+
+    },
+    "扩展已启用" : {
+
+    },
+    "扩展未启用" : {
+
+    },
+    "操作功能管理" : {
+
+    },
+    "文件图标" : {
+
+    },
+    "文件扩展名" : {
+
+    },
+    "文件模板" : {
+
+    },
+    "文件类型显示名称" : {
+
+    },
+    "新增文件类型" : {
+
+    },
+    "新建文件管理" : {
+
+    },
+    "无效的文件夹选择" : {
+
+    },
+    "显示名称" : {
+
+    },
+    "暂无常用目录" : {
+
+    },
+    "暂无应用程序" : {
+
+    },
+    "暂无授权文件夹" : {
+
+    },
+    "暂无操作功能" : {
+
+    },
+    "暂无文件类型" : {
+
+    },
+    "更换图标" : {
+
+    },
+    "更换应用" : {
+
+    },
+    "更换模板" : {
+
+    },
+    "未授权的文件夹" : {
+
+    },
+    "构建 %@" : {
+
+    },
+    "格式：KEY=VALUE，每行一个" : {
+
+    },
+    "模板：%@" : {
+
+    },
+    "添加" : {
+
+    },
+    "添加和管理右键菜单中的应用程序" : {
+
+    },
+    "添加应用" : {
+
+    },
+    "添加文件夹" : {
+
+    },
+    "添加文件夹以启用右键菜单功能" : {
+
+    },
+    "添加文件类型" : {
+
+    },
+    "添加目录" : {
+
+    },
+    "点击上方的\"添加应用\"按钮来添加您的第一个应用程序\n您可以添加任何 macOS 应用程序到右键菜单中" : {
+
+    },
+    "点击上方的\"添加文件类型\"按钮来添加新的文件类型" : {
+
+    },
+    "点击上方的\"添加目录\"按钮来添加常用目录" : {
+
+    },
+    "点击上方的\"重置默认\"按钮来恢复默认操作功能" : {
+
+    },
+    "点击选择图标" : {
+
+    },
+    "版本 %@" : {
+
+    },
+    "环境变量" : {
+
+    },
+    "确定" : {
+
+    },
+    "立即添加应用" : {
+
+    },
+    "管理右键菜单中的常用目录快捷访问" : {
+
+    },
+    "管理右键菜单中的新建文件类型" : {
+
+    },
+    "编辑应用程序" : {
+
+    },
+    "编辑文件类型" : {
+
+    },
+    "自定义图标" : {
+
+    },
+    "菜单栏显示" : {
+
+    },
+    "输入启动参数（可选）" : {
+
+    },
+    "输入显示名称" : {
+
+    },
+    "选择ICO文件" : {
+
+    },
+    "选择图标" : {
+
+    },
+    "选择应用" : {
+
+    },
+    "选择模板" : {
+
+    },
+    "选择自定义图标" : {
+
+    },
+    "通用设置" : {
+
+    },
+    "配置应用的基本设置和权限" : {
+
+    },
+    "重置默认" : {
+
+    },
+    "默认打开应用" : {
+
+    }
+  },
+  "version" : "1.0"
+}

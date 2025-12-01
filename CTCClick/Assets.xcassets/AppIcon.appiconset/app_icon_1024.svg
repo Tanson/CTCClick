@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 魔法棒渐变 -->
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 星星发光效果 -->
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 圆角矩形背景 -->
+  <rect x="0" y="0" width="1024" height="1024" rx="180" ry="180" fill="url(#backgroundGradient)"/>
+  
+  <!-- Finder轮廓 - 更大更饱满 -->
+  <path d="M 150 200 L 874 200 Q 924 200 924 250 L 924 774 Q 924 824 874 824 L 150 824 Q 100 824 100 774 L 100 250 Q 100 200 150 200 Z" 
+        fill="none" stroke="#FFFFFF" stroke-width="16" opacity="0.95"/>
+  
+  <!-- Finder内部细节 - 更大 -->
+  <rect x="130" y="230" width="764" height="60" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="180" cy="340" r="28" fill="#FF6B6B" opacity="0.9"/>
+  <circle cx="260" cy="340" r="28" fill="#4ECDC4" opacity="0.9"/>
+  <circle cx="340" cy="340" r="28" fill="#45B7D1" opacity="0.9"/>
+  
+  <!-- 魔法棒 - 更大更粗 -->
+  <rect x="400" y="450" width="280" height="28" rx="14" ry="14" fill="url(#wandGradient)" transform="rotate(45 540 464)"/>
+  <circle cx="680" cy="464" r="20" fill="#FFD700" transform="rotate(45 540 464)"/>
+  
+  <!-- 魔法星 - 更大更亮 -->
+  <g filter="url(#starGlow)">
+    <!-- 主星 - 大幅增大 -->
+    <path d="M 720 350 L 740 390 L 780 390 L 750 415 L 760 455 L 720 430 L 680 455 L 690 415 L 660 390 L 700 390 Z" 
+          fill="#FFD700" opacity="1"/>
+    
+    <!-- 小星1 - 增大 -->
+    <path d="M 800 450 L 812 470 L 832 470 L 818 483 L 824 503 L 800 490 L 776 503 L 782 483 L 768 470 L 788 470 Z" 
+          fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- 小星2 - 增大 -->
+    <path d="M 640 280 L 652 300 L 672 300 L 658 313 L 664 333 L 640 320 L 616 333 L 622 313 L 608 300 L 628 300 Z" 
+          fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- 新增小星3 -->
+    <path d="M 850 320 L 858 332 L 870 332 L 861 340 L 864 352 L 850 346 L 836 352 L 839 340 L 830 332 L 842 332 Z" 
+          fill="#FFFFFF" opacity="0.8"/>
+    
+    <!-- 新增小星4 -->
+    <path d="M 580 520 L 588 532 L 600 532 L 591 540 L 594 552 L 580 546 L 566 552 L 569 540 L 560 532 L 572 532 Z" 
+          fill="#FFFFFF" opacity="0.8"/>
+  </g>
+</svg>
